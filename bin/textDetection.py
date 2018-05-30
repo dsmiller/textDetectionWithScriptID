@@ -198,7 +198,7 @@ if __name__ == '__main__' :
                                                       contrast_threshold=th_contrast,
                                                       n_jobs=1)
                 return output_lut
-            except Exception, e :
+            except Exception as e :
                 print("FAILED",e)
                 return None
         #----------------------------------------------------------------------------
