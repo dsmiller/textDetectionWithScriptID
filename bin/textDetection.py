@@ -302,6 +302,7 @@ if __name__ == '__main__' :
                 output_jf = '-1'
                 try :
                     output_lut = text_decoder_full( file_path )
+                    output_jf = os.path.join(output_dir, output_lut['md5'] + ".json")
                     success = True
                 except Exception as e:
                     verbose_print( verbose, "WARNING: fail to process sample", file_path, e )
